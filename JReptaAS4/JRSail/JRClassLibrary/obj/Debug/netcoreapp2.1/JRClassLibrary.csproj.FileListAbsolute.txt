@@ -1,0 +1,9 @@
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\bin\Debug\netcoreapp2.1\JRClassLibrary.deps.json
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\bin\Debug\netcoreapp2.1\JRClassLibrary.dll
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\bin\Debug\netcoreapp2.1\JRClassLibrary.pdb
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\obj\Debug\netcoreapp2.1\JRClassLibrary.csprojAssemblyReference.cache
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\obj\Debug\netcoreapp2.1\JRClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\obj\Debug\netcoreapp2.1\JRClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\obj\Debug\netcoreapp2.1\JRClassLibrary.AssemblyInfo.cs
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\obj\Debug\netcoreapp2.1\JRClassLibrary.dll
+C:\Users\Joel\Documents\Fall 2018\Web Tech - Scanlan\JReptaAS4\JRSail\JRClassLibrary\obj\Debug\netcoreapp2.1\JRClassLibrary.pdb

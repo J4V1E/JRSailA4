@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JRSail.Models;
+using JRClassLibrary;
 
 namespace JRSail.Controllers
 {
@@ -53,7 +54,7 @@ namespace JRSail.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.memberFullName = member.FullName;
             return View(member);
         }
 
@@ -61,7 +62,7 @@ namespace JRSail.Controllers
         public IActionResult Create()
         {
             ViewData["NewMemberId"] = _context.Member.OrderByDescending(x => x.MemberId).First().MemberId + 1;
-            ViewData["ProvinceCode"] = new SelectList(_context.Province, "ProvinceCode", "ProvinceCode");
+            //ViewData["ProvinceCode"] = new SelectList(_context.Province, "ProvinceCode", "ProvinceCode");
             return View();
         }
 
@@ -78,7 +79,7 @@ namespace JRSail.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ProvinceCode"] = new SelectList(_context.Province, "ProvinceCode", "ProvinceCode", member.ProvinceCode);
+            ViewData["ProvinceCode"] = new SelectList(_context.Province, "ProvinceCode", "Name", member.ProvinceCode);
             return View(member);
 
             
@@ -93,11 +94,12 @@ namespace JRSail.Controllers
             }
             
             var member = await _context.Member.FindAsync(id);
+            ViewBag.memberFullName = member.FullName;
             if (member == null)
             {
                 return NotFound();
             }
-            ViewData["ProvinceCode"] = new SelectList(_context.Province, "ProvinceCode", "ProvinceCode", member.ProvinceCode);
+            ViewData["ProvinceCode"] = new SelectList(_context.Province.OrderBy(x => x.Name), "ProvinceCode", "Name", member.ProvinceCode);
             return View(member);
         }
 
@@ -133,7 +135,7 @@ namespace JRSail.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ProvinceCode"] = new SelectList(_context.Province, "ProvinceCode", "ProvinceCode", member.ProvinceCode);
+            ViewData["ProvinceCode"] = new SelectList(_context.Province.OrderBy(x => x.Name), "ProvinceCode", "Name", member.ProvinceCode);
             return View(member);
         }
 
@@ -152,7 +154,7 @@ namespace JRSail.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.memberFullName = member.FullName;
             return View(member);
         }
 
@@ -161,20 +163,50 @@ namespace JRSail.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var member = await _context.Member.FindAsync(id);
-
+            
             try
             {
-                _context.Member.Remove(member);
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception)
-            {
-                TempData["message"] = "Unable to delete member, references likely exist in another table.";
-                return RedirectToAction(nameof(Index));
-            }
+                var member = await _context.Member.FindAsync(id);
 
-            return RedirectToAction(nameof(Index));
+                try
+                {
+                    _context.Member.Remove(member);
+                    await _context.SaveChangesAsync();
+                    TempData["message"] = $"Successfully deleted member {member.FullName}";
+                }
+                catch (Exception)
+                {
+                    throw new Exception("Unable to delete member, references likely exist in another table.");
+                }
+            }
+            catch (Exception e)
+            {
+
+                if (e.InnerException != null)
+                {
+                    TempData["message"] = e.InnerException.Message;
+                }
+                else
+                    TempData["message"] = e.Message;
+                return RedirectToAction(nameof(Delete));
+            }
+            
+            return RedirectToAction(nameof(Delete), id);
+
+            //var member = await _context.Member.FindAsync(id);
+
+            //try
+            //{
+            //    _context.Member.Remove(member);
+            //    await _context.SaveChangesAsync();
+            //}
+            //catch (Exception)
+            //{
+            //    TempData["message"] = "Unable to delete member, references likely exist in another table.";
+            //    return RedirectToAction(nameof(Index));
+            //}
+
+            //return RedirectToAction(nameof(Index));
         }
 
         private bool MemberExists(int id)

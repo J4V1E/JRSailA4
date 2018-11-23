@@ -12224,11 +12224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joel\\Documents\\Fall 2018\\Web Tech - Scanlan\\JReptaAS3\\JRSail\\JRSail\\JRSail.csproj",
+      "projectUniqueName": "C:\\Users\\Joel\\Documents\\Fall 2018\\Web Tech - Scanlan\\JReptaAS4\\JRSail\\JRSail\\JRSail.csproj",
       "projectName": "JRSail",
-      "projectPath": "C:\\Users\\Joel\\Documents\\Fall 2018\\Web Tech - Scanlan\\JReptaAS3\\JRSail\\JRSail\\JRSail.csproj",
+      "projectPath": "C:\\Users\\Joel\\Documents\\Fall 2018\\Web Tech - Scanlan\\JReptaAS4\\JRSail\\JRSail\\JRSail.csproj",
       "packagesPath": "C:\\Users\\Joel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joel\\Documents\\Fall 2018\\Web Tech - Scanlan\\JReptaAS3\\JRSail\\JRSail\\obj\\",
+      "outputPath": "C:\\Users\\Joel\\Documents\\Fall 2018\\Web Tech - Scanlan\\JReptaAS4\\JRSail\\JRSail\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
