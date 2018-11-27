@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
-      "JRClassLibrary/1.0.0": {
+      "JRClassLibrary/1.0.1": {
         "runtime": {
           "JRClassLibrary.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "JRClassLibrary/1.0.0": {
+    "JRClassLibrary/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -66,7 +66,7 @@ using JRSail.Models;
             WriteLiteral("\r\n<h2>List of Membership Types</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(160, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c417b2200b774d488e8d6fb547abbad0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c05a299c81d412b8ed8f0df80409302", async() => {
                 BeginContext(183, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -156,7 +156,7 @@ using JRSail.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1029, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0f2db20140604db0b9ef26def4c10727", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dd2449f894be4eb689ff86a16f8ec65a", async() => {
                 BeginContext(1090, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -191,7 +191,7 @@ using JRSail.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1118, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01be32e029884c65bf4673a3aa4ceb13", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89022bbb99544c75aa39c8ee2dd2c02f", async() => {
                 BeginContext(1182, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -226,7 +226,7 @@ using JRSail.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1213, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "52a4ad36db464985b6fda0abf95729b9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b989467486c4ae0bf011026a8a6c06d", async() => {
                 BeginContext(1276, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

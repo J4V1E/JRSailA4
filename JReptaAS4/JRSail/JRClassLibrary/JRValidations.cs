@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
-
-
+    
 namespace JRClassLibrary
 {
-    public static class JRValidations
+    public static class JRValidations 
     {
         /// <summary>
         /// Capitalizes first letter of every word in string, lowers everything else
